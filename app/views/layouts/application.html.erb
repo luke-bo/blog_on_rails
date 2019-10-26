@@ -10,6 +10,18 @@
   </head>
 
   <body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="/">Blog On Rails</a>
+            <div class="ml-auto d-flex flex-row">        
+              <div class="nav-item nav-link"><%= link_to 'Home', root_path %></div>
+              <div class="nav-item nav-link"><%= link_to 'New Post', new_post_path %></div>
+            </div>
+        </nav>
+    </div>
+
     <%= yield %>
   </body>
 </html>
+
+
